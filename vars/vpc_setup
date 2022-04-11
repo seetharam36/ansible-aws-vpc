@@ -1,6 +1,6 @@
 vpc_name: "Vprofile-vpc"
 
-#VPC Range
+# VPC Range
 vpcCidr: '172.20.0.0/16'
 
 # Subnets Range
@@ -11,12 +11,16 @@ PrivSub1Cidr: 172.20.4.0/24
 PrivSub2Cidr: 172.20.5.0/24
 PrivSub3Cidr: 172.20.6.0/24
 
-#Region Name
+# Region Name
 region: "us-east-2"
 
-#Zone Names
-Zone1: us-east-2a
-Zone2: us-east-2b
-Zone3: us-east-2c
+# Zone Names
+zone1: us-east-2a
+zone2: us-east-2b
+zone3: us-east-2c
 
 state: present
+
+#Bastion setup
+bastion_ami: ami-064ff912f78e3e561
+MYIP: 49.37.188.130/32
